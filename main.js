@@ -45,7 +45,7 @@ var td = new Array(),   // 初始化一个数组，保存每个格子地鼠
   // 点击事件
   function hit(id) {
     if(playing === false) {
-      alert('请点击开始游戏');
+      alert('请点击开始制裁');
       return;
     }
     beat += 1;
@@ -69,13 +69,13 @@ var td = new Array(),   // 初始化一个数组，保存每个格子地鼠
     clearInterval(interId);
     clearTimeout(timeId);
   }
-  // 游戏结束
+  // 制裁结束
   function gameOver() {
     timeStop();
     playing = false;
     audioElem.pause();
     clearMouse();
-    alert("游戏结束！\n 你获得的分数为："+ score +"\n 命中率为："+success);
+    alert("制裁结束！\n 你获得的分数为："+ score +"\n 命中率为："+success);
     success = 0;
     score = 0;
     knock = 0;
