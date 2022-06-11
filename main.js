@@ -75,7 +75,7 @@ var td = new Array(),   // 初始化一个数组，保存每个格子地鼠
     playing = false;
     audioElem.pause();
     clearMouse();
-    alert("制裁结束！\n ljc966出品\n你获得的分数为："+ score +"\n 制裁率为："+success);
+    alert("本游戏由ljc966出品！\n 你获得的分数为："+ score +"\n 制裁率为："+success);
     success = 0;
     score = 0;
     knock = 0;
